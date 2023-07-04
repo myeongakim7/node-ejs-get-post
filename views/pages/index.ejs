@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <hr />
+    <!-- get 전달방싣 -->
+    <!-- 검색창 form 활용 -->
+    <!-- action은 서버의 주소, get 방식으로 보냄 -->
+    <form action="/create" method="get">
+      <label for="name">name:</label>
+      <input type="text" id="name" name="search" />
+      <input type="submit" value="submit" />
+    </form>
+    <hr />
+    <!-- post 전달방식  -->
+    <form action="/create2" method="post">
+      <fieldset>
+        <legend>통장암호</legend>
+        <input type="text" name="pwd" />
+        <input type="submit" value="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
